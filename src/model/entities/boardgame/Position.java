@@ -1,7 +1,8 @@
 package model.entities.boardgame;
 
 public class Position {
-
+// Contains rows and column of the board
+	
 	private int row;
 	private int column;
 
