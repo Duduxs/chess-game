@@ -1,7 +1,9 @@
-package model.entities.boardgame;
+package boardgame;
 
 public class Piece {
 
+	// Contains a position of a piece.
+	
 	protected Position position;
 	private Board board;
 	

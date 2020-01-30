@@ -1,8 +1,7 @@
-package model.entities.boardgame;
+package boardgame;
 
 public class Position {
-// Contains rows and column of the board
-	
+	// Generic class where contains row and column of an element.
 	private int row;
 	private int column;
 
