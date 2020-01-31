@@ -26,7 +26,7 @@ public class ChessMatch {
 	// Initialize the chess game, input the pieces on the board.
 	private void initialSetup() {
 		board.placePiece(new Rook(board,Color.WHITE), new Position(2,1));
-		board.placePiece(new King(board,Color.BLACK), new Position(0,4));
+		board.placePiece(new King(board,Color.BLACK), new Position(2,4));
 		board.placePiece(new King(board,Color.WHITE), new Position(7,4));
 	}
 }
