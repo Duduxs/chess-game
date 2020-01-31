@@ -1,7 +1,9 @@
 package boardgame;
 
 public class Position {
-	// Generic class where contains row and column of an element.
+	/* Generic class where contains row and column of an element.
+	 * It's responsable for define the position of pieces. 
+	 */
 	private int row;
 	private int column;
 
