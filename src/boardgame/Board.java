@@ -41,7 +41,7 @@ public class Board {
 	}
 	
 	/*Receive the piece on the insert position and test if
-     * alredy exists a piece in position
+     * already exists a piece in position
 	 */ 
 	public void placePiece(Piece piece, Position position) {
 		if(thereIsAPiece(position)) {
