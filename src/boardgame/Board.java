@@ -51,6 +51,22 @@ public class Board {
 		piece.position = position;
 	}
 	
+	public Piece removePiece(Position position) {
+		// Check if the position exists
+		if (!positionExists(position)) {
+			throw new BoardException("Position not on the board");
+		}
+		// If isn't there a piece in board return null
+		if(piece(position) == null) {
+			return null;
+		}
+		// else..
+		Piece aux = piece(position);
+		aux.position = null;
+		pieces[position.getRow()][position.getColumn()] = null;
+		return aux;
+	}
+	
 	/**
 	 * See if the part exists in a certain position, 
 	 *  making sure that the parts do not leave the range
@@ -70,5 +86,7 @@ public class Board {
 		}
 		return piece(position) != null;
 	}
+	
+	
 
 }
