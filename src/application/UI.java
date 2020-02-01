@@ -45,7 +45,7 @@ public class UI {
 	// Reading an piece
 	public static ChessPosition readChessPosition(Scanner sc) {
 		try {
-			String s = sc.nextLine();
+			String s = sc.nextLine().toLowerCase();
 			char column = s.charAt(0);
 			int row = Integer.parseInt(s.substring(1));
 			return new ChessPosition(column, row);
@@ -74,26 +74,32 @@ public class UI {
 
 	// Print BOARD columns
 	public static void printBoard(ChessPiece[][] pieces) {
+		System.out.println("  A B C D E F G H");
 		for (int i = 0; i < pieces.length; i++) {
 			System.out.print((8 - i) + " ");
 			for (int j = 0; j < pieces.length; j++) {
 				printPiece(pieces[i][j], false);
 			}
+			System.out.print((8 - i) + " ");
 			System.out.println();
 		}
 		// Print board lines
-		System.out.println("  a b c d e f g h");
+		System.out.println("  A B C D E F G H");
 	}
 
 	// Override for colors to possibleMoves
 	public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves) {
+		System.out.println("  A B C D E F G H");
 		for (int i = 0; i < pieces.length; i++) {
 			System.out.print((8 - i) + " ");
 			for (int j = 0; j < pieces.length; j++) {
 				printPiece(pieces[i][j], possibleMoves[i][j]);
+
 			}
+			System.out.print((8 - i) + " ");
 			System.out.println();
 		}
+
 		// Print board lines
 		System.out.println("  a b c d e f g h");
 	}
