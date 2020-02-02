@@ -1,8 +1,9 @@
 package boardgame;
 
 public class Position {
-	/* Generic class where contains row and column of an element.
-	 * It's responsable for define the position of pieces. 
+	/*
+	 * Generic class where contains row and column of an element. It's responsable
+	 * for define the position of pieces.
 	 */
 	private int row;
 	private int column;
@@ -27,7 +28,7 @@ public class Position {
 	public void setColumn(int column) {
 		this.column = column;
 	}
-	
+
 	public void setValues(int row, int column) {
 		this.row = row;
 		this.column = column;

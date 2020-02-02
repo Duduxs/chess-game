@@ -110,6 +110,7 @@ public class Pawn extends ChessPiece {
 		return mat;
 	}
 
+	// Shows the piece on the board from the letter
 	@Override
 	public String toString() {
 		return "P";

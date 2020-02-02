@@ -2,7 +2,7 @@ package boardgame;
 
 public abstract class Piece {
 
-	// Contains a position of a piece.
+	// Contains a position and a moviment of a piece.
 
 	protected Position position;
 	private Board board;

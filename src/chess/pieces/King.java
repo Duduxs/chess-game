@@ -9,8 +9,8 @@ import chess.Color;
 public class King extends ChessPiece {
 
 	private ChessMatch chessMatch;
-	
-	public King(Board board, Color color,  ChessMatch chessMatch) {
+
+	public King(Board board, Color color, ChessMatch chessMatch) {
 		super(board, color);
 		this.chessMatch = chessMatch;
 	}
