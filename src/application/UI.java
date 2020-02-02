@@ -104,13 +104,17 @@ public class UI {
 		System.out.println("  a b c d e f g h");
 	}
 
+
 	// print each PIECE of board, if exists.
 	private static void printPiece(ChessPiece piece, boolean background) {
+
 		if (background) {
 			System.out.print(ANSI_GREEN_BACKGROUND);
 		}
+
 		if (piece == null) {
 			System.out.print("-" + ANSI_RESET);
+			
 		} else {
 			if (piece.getColor() == Color.WHITE) {
 				System.out.print(ANSI_WHITE + piece + ANSI_RESET);
